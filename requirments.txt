@@ -1,0 +1,8 @@
+Flask
+gTTS
+deep_translator
+google-generativeai
+uuid
+threading
+webbrowser
+mangum
