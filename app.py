@@ -171,7 +171,7 @@ GIET School of Pharmacy:
 2.Polytechnique block:720 meters from main block and 20 meters from rk block
 3.Pharmacy block: 650 meters from main campus and 50 meetrs from rk block
 4.Giet2:2000 meters from main campus 
-5.Degree block :250 meters  friom giet2 campus and 2250 meters from main campus
+5.Degree block :250 meters  from giet2 campus and 2250 meters from main campus
 6.Zerox shop:30 meters distance from main campus
 7.Food court:80 meters from main campus
 8.Juice shop:20 meters from main campus
@@ -438,8 +438,4 @@ if __name__ == "__main__":
     threading.Timer(1.0, open_browser).start()
 
     # Run Flask app
-    app.run(
-        host=Config.HOST,
-        port=Config.PORT,
-        debug=Config.DEBUG
-    )
+    app.run(host='0.0.0.0', port=5000, debug=False, use_reloader=False)
